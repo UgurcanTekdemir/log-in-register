@@ -1,0 +1,139 @@
+:root{
+    --color-primary:rgba(241, 241, 38, 0.424);
+    --color-primary-dark:rgba(240, 69, 69, 0.829);
+    --color-secondary:rgba(27, 22, 9, 0.883);
+    --color-error:rgb(250, 11, 11);
+    --color-sucsess:rgba(172, 219, 17, 0.596);
+    --border-radius:8px;
+
+    --bg-color-primary:rgba(221, 25, 25, 0.699);
+    --bg-color-primary-dark:rgba(165, 43, 43, 0.767);
+    --regular-font-size:10px;
+    --mobile-font-size:15px;
+
+    --box-shadow: 0 0 10px rgb(138, 18, 18);
+    --input-padding:0.9rem;
+    --input-regular-border:2px solid rgb(216, 216, 216);
+
+
+
+
+
+
+
+
+}
+
+body{
+    background:linear-gradient(to right, var(--bg-color-primary), var(--bg-color-primary-dark),url(code.jpg));
+    background-attachment:fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+
+
+    font-size: var(--regular-font-size);
+    position: relative;
+    max-width: 5000px;
+    overflow: hidden;
+  
+
+}
+
+.container{
+background-color:rgb(91, 107, 96);
+width: 600px;
+max-width:  300px;
+max-height: 600px;
+box-shadow:var(--bg-color-primary-dark) ;
+border-radius: var(--border-radius);
+padding: 4rem;
+margin: 4rem;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+font-family: 'Poppins',sans-serif;
+
+}
+.form__title{
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+.form__message{
+
+    text-align: center;
+    margin-bottom: 1rem;
+    color: red;
+}
+.form__message-error{
+    color: var(--color-error);
+
+}
+.form__input--group{
+    margin-bottom: 2rem;
+}
+.form__input{
+    width: 90%;
+    padding:var(--input-padding);
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    outline: none;
+    border:var(--input-regular-border) ;
+    background-color: whitesmoke;
+    transition: background .3s,border-color .3s;
+
+
+
+}
+.form__input:focus{
+    border-color: var(--color-primary);
+    background-color: rgba(171, 214, 161, 0.924);
+}
+.form__input-error-message{
+margin-top: 0.5rem;
+font: 0.85rem;
+color: var(--color-error);
+}
+
+.form__button{
+width: 90%;
+padding: 1rem 1rem;
+font-weight: bold;
+color: rgba(10, 230, 21, 0.959);
+background-color: var(--color-primary);
+border-radius: var(--border-radius);
+outline: none;
+border: none;
+font-size: 1.2rem;
+
+}
+.form__button:hover{
+    background-color: black;
+
+}
+.form__button:active{
+    transform: scale(0.85);
+}
+.form__text{
+    text-align: center;
+    font-size: 15px;
+
+}
+.form__link{
+    color:var(--color-secondary);
+    text-decoration: none;
+    cursor:pointer;
+}
+.form__link:hover{
+    text-decoration:underline;
+}
+
+.form> *:first-child{
+    margin-top: 0;
+
+}
+.form>*:last-child{
+    margin-bottom: 0;
+}
